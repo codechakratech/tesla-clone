@@ -1,0 +1,103 @@
+.carSection{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.carModel{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top:4rem;
+}
+
+.carModel div{
+  font-size:40px;
+  z-index: 0;
+}
+
+.buttonGrp{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:3rem;
+
+}
+
+.btn1{
+  background-color:black;
+  color:white;
+  width:200px;
+  height:3rem;
+  border-radius:2rem;
+  cursor: pointer;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+
+.btn2{
+  background-color:white;
+  color:black;
+  width:200px;
+  height:3rem;
+  border-radius:2rem;
+  cursor: pointer;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+
+nav{
+  display:flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  justify-content:space-between;
+  margin:1rem;
+  z-index:1;
+  cursor: pointer;
+}
+
+.rightMenu{
+  display:flex;
+}
+
+a{
+  text-decoration:none;color: #000;
+  margin-left:1rem;
+}
+
+.mobile{
+  background-color:white;
+  position:fixed;
+  z-index: 9999;
+  width:256px;
+  right:0;
+  top:0;
+  bottom:0;
+}
+
+.mobile .closeButton{
+  display:flex;
+  justify-content:flex-end;
+  margin: 2rem;
+}
+
+nav .mobile a{
+  display:flex;
+  justify-content:flex-start;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 768px){
+  .mainMenu{
+    display:none;
+  }
+  .rightTwo{
+    display:none;
+  }
+}
